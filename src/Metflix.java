@@ -15,7 +15,7 @@ public class Metflix {
         Pelicula titanic; //declara una variable que apuntara a una Pelicula
         titanic = new Pelicula(); //Estas ultimoas 2 lineas: Pelicula titanic = new Pelicula();
 
-        titanic.nombre = "Titanic";
+        titanic.setNombre("Titanic");
         titanic.añoLanzamiento = 1997;
         titanic.duracion = 210; //3hs 30
 
@@ -30,7 +30,7 @@ public class Metflix {
 
         //Otra Peli
         Pelicula batman = new Pelicula();
-        batman.nombre = "Batman: el caballero de la nohe";
+        batman.setNombre("Batman: el caballero de la noche");
         batman.añoLanzamiento = 2008;
         batman.duracion = 152;
 
@@ -47,7 +47,7 @@ public class Metflix {
         //How I met your mother. Serie
 
         Serie howIMetYM = new Serie();
-        howIMetYM.nombre = "How I met your mother";
+        howIMetYM.setNombre("How I met your mother");
         howIMetYM.añoLanzamiento = 2005;
         
         actor = new Actor();
@@ -66,16 +66,16 @@ public class Metflix {
         temporada.numero = 5;
      
         //Creo el episodio
-        Episodio episodio = new Episodio();
-        episodio.nombre = "The last cigarrette";
-        episodio.numero = 11;
+        Episodio episodio = new Episodio("The last cigarrette",11);
+        /*episodio.setNombre("The last cigarrette");
+        episodio.setNumero(11);*/
 
         //vinculo temporada con episodio
         temporada.episodios.add(episodio);
 
-        episodio = new Episodio();
-        episodio.nombre = "Definitions";
-        episodio.numero = 1;
+        episodio = new Episodio("Definitions",1);
+        /*episodio.setNombre("Definitions");
+        episodio.setNumero(1);*/
 
         temporada.episodios.add(episodio);
 
@@ -89,16 +89,16 @@ public class Metflix {
         temporada.numero = 3;
      
         //Creo el episodio
-        episodio = new Episodio();
-        episodio.nombre = "Wait for it";
-        episodio.numero = 1;
+        episodio = new Episodio("Wait for it",1);
+        /*episodio.setNombre("Wait for it");
+        episodio.setNumero(1);*/
 
         //vinculo temporada con episodio
         temporada.episodios.add(episodio);
 
-        episodio = new Episodio();
-        episodio.nombre = "Little Boys";
-        episodio.numero = 4;
+        episodio = new Episodio("Little Boys",4);
+        /*episodio.setNombre("Little Boys");
+        episodio.setNumero(4);*/
 
         temporada.episodios.add(episodio);
 
@@ -109,7 +109,7 @@ public class Metflix {
         this.series.add(howIMetYM);
 
         Serie bbt = new Serie();
-        bbt.nombre = "The BigBang Theory";
+        bbt.setNombre("The BigBang Theory");
         bbt.añoLanzamiento = 2007;
         
         actor = new Actor();
@@ -123,16 +123,16 @@ public class Metflix {
         temporada.numero = 1;
      
         //Creo el episodio
-        episodio = new Episodio();
-        episodio.nombre = "Pilot";
-        episodio.numero = 1;
+        episodio = new Episodio("pilot",1);
+        /*episodio.setNombre("Pilot");
+        episodio.setNumero(1);*/
 
         //vinculo temporada con episodio
         temporada.episodios.add(episodio);
 
-        episodio = new Episodio();
-        episodio.nombre = "The Cooper-Hofstadter Polarizatio";
-
+        episodio = new Episodio("The Cooper-Hofstadter Polarizatio", 3);
+        /*episodio.setNombre("The Cooper-Hofstadter Polarizatio");
+        episodio.setNumero(3);*/
         temporada.episodios.add(episodio);
 
         //Agrego la temporada
@@ -144,7 +144,7 @@ public class Metflix {
         Pelicula armageddon; 
         armageddon = new Pelicula(); 
 
-        titanic.nombre = "Armageddon";
+        titanic.setNombre("Armageddon");
         titanic.añoLanzamiento = 1998;
         titanic.duracion = 153; //2 horas 33 min
 
@@ -162,7 +162,7 @@ public class Metflix {
         //SERIE HECHA POR BREN
 
         Serie friends = new Serie();
-        friends.nombre = "Friends";
+        friends.setNombre("Friends");
         friends.añoLanzamiento = 1994;
         
         actor = new Actor();
@@ -181,9 +181,9 @@ public class Metflix {
         temporada1.numero = 1;
      
         //Creo el episodio
-        episodio = new Episodio();
-        episodio.nombre = "Piloto";
-        episodio.numero = 1;
+        episodio = new Episodio("piloto",1);
+        /*episodio.setNombre("Piloto");
+        episodio.setNumero(1);*/
 
         //vinculo temporada con episodio
         temporada.episodios.add(episodio);
@@ -198,7 +198,7 @@ public class Metflix {
         Pelicula forrestGump; 
         forrestGump = new Pelicula(); 
 
-        forrestGump.nombre = "Forrest Gump";
+        forrestGump.setNombre("Forrest Gump");
         forrestGump.añoLanzamiento = 1994;
         forrestGump.duracion = 142; //2 horas 22 min
 
@@ -219,7 +219,7 @@ public class Metflix {
         // PELICULA HECHA POR BREN
 
         Serie sexEducation = new Serie();
-        sexEducation.nombre = "Sex Education";
+        sexEducation.setNombre("Sex Education");
         sexEducation.añoLanzamiento = 2019;
         
         actor = new Actor();
@@ -238,9 +238,9 @@ public class Metflix {
         temporada2.numero = 2;
      
         //Creo el episodio
-        episodio = new Episodio();
-        episodio.nombre = "5";
-        episodio.numero = 5;
+        episodio = new Episodio("5" , 5);
+        /*episodio.setNombre("5");
+        episodio.setNumero(5);*/
 
         //vinculo temporada con episodio
         temporada2.episodios.add(episodio);
@@ -255,9 +255,9 @@ public class Metflix {
         temporada3.numero = 3;
      
         //Creo el episodio
-        episodio = new Episodio();
-        episodio.nombre = "2";
-        episodio.numero = 2;
+        episodio = new Episodio("2",2);
+        /*episodio.setNombre("2");
+        episodio.setNumero(2);*/
 
         director = new Director();
         director.nombre = "Gillian Anderson";
@@ -278,7 +278,7 @@ public class Metflix {
     
     public Pelicula buscarpelicula(String nombreABuscar){ 
         for (Pelicula pelicula : this.peliculas) {
-            if (pelicula.nombre.equals(nombreABuscar))
+            if (pelicula.getNombre().equals(nombreABuscar))
                 return pelicula; 
         }
         return null;
@@ -309,7 +309,7 @@ public class Metflix {
         for (Serie serie : this.series) {
             //pregunto si el nombre de la serie actual
             //que estoy recorriendo es la que necesito
-            if (serie.nombre.equals(nombreABuscar))
+            if (serie.getNombre().equals(nombreABuscar))
                 return serie; //devuelvo esta serie.
         }
         //si llego hasta aca, es porque no encontro la serie.
