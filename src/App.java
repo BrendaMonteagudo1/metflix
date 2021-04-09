@@ -39,7 +39,7 @@ public class App {
         if (episodio instanceof Websodio){
             //Castear: es el proceso donde "desenmascaramos" a una variable.
             Websodio websodio = (Websodio)episodio;
-            System.out.println("El link del websodio es: "+ websodio.link);
+            System.out.println("El link del websodio es: "+ websodio.getLink());
         }
 
 

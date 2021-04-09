@@ -2,8 +2,8 @@ public class Episodio {
     private int numero;
     private String nombre;
     private int duracion; //en minutos
-    public Director director;
-    public String sinopsis;
+    private Director director;
+    private String sinopsis;
 
     public void reproducir(){
         System.out.println("Reproduciendo episodio " + nombre);
@@ -42,8 +42,25 @@ public class Episodio {
         public void setDuracion(int duracion){
         this.duracion = duracion;
         }
-        
-        
+      
+    // GET Y SET DE DIRECTOR
+
+    public Director getDirector(){
+        return this.director;
+        }
+    public void setDirector(Director director){
+        this.director = director;
+         }
+    
+    // GET Y SET DE SINOPSIS
+
+    public String getSinopsis(){
+        return this.sinopsis;
+        }
+    public void setSipnopsis(String sinopsis){
+        this.sinopsis = sinopsis;
+         }
+
   }
 
            

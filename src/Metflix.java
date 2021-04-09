@@ -16,11 +16,11 @@ public class Metflix {
         titanic = new Pelicula(); //Estas ultimoas 2 lineas: Pelicula titanic = new Pelicula();
 
         titanic.setNombre("Titanic");
-        titanic.añoLanzamiento = 1997;
-        titanic.duracion = 210; //3hs 30
+        titanic.setAñoLanzamiento(1997);
+        titanic.setDuracion(210); //3hs 30
 
         Actor actor = new Actor();
-        actor.nombre = "Leo DiCaprio";
+        actor.setNombre("Leo DiCaprio");
 
         //Agrego a la lista de actores del objeto titanic
         titanic.actores.add(actor); //metodo Add -> agregar a una lista
@@ -31,14 +31,14 @@ public class Metflix {
         //Otra Peli
         Pelicula batman = new Pelicula();
         batman.setNombre("Batman: el caballero de la noche");
-        batman.añoLanzamiento = 2008;
-        batman.duracion = 152;
+        batman.setAñoLanzamiento(2008);
+        batman.setDuracion(152);
 
         //No voy a declarar otra variable actor, voy a reusar
         //siempre primero antes de reusar
         // re instanciar
         actor = new Actor(); //Creo un nuevo actor, pero referenciado con la variable actor
-        actor.nombre = "Christian Bale";
+        actor.setNombre("Christian Bale");
 
         batman.actores.add(actor);
 
@@ -48,22 +48,22 @@ public class Metflix {
 
         Serie howIMetYM = new Serie();
         howIMetYM.setNombre("How I met your mother");
-        howIMetYM.añoLanzamiento = 2005;
+        howIMetYM.setAñoLanzamiento(2005);
         
         actor = new Actor();
-        actor.nombre = "Neil Patrick Harris";
+        actor.setNombre("Neil Patrick Harris");
 
         howIMetYM.actores.add(actor);
 
         actor = new Actor();
-        actor.nombre = "Cobie Smulders";
+        actor.setNombre("Cobie Smulders");
 
         howIMetYM.actores.add(actor);
         
         //T5:E11
         //creo la temporada
         Temporada temporada = new Temporada();
-        temporada.numero = 5;
+        temporada.setNumero(5);
      
         //Creo el episodio
         Episodio episodio = new Episodio("The last cigarrette",11);
@@ -86,7 +86,7 @@ public class Metflix {
         //T3
         //creo la temporada
         temporada = new Temporada();
-        temporada.numero = 3;
+        temporada.setNumero(3);
      
         //Creo el episodio
         episodio = new Episodio("Wait for it",1);
@@ -110,17 +110,17 @@ public class Metflix {
 
         Serie bbt = new Serie();
         bbt.setNombre("The BigBang Theory");
-        bbt.añoLanzamiento = 2007;
+        bbt.setAñoLanzamiento(2007);
         
         actor = new Actor();
-        actor.nombre = "Kaley Cuoco";
+        actor.setNombre("Kaley Cuoco");
 
         bbt.actores.add(actor);
 
         
         //creo la temporada
         temporada = new Temporada();
-        temporada.numero = 1;
+        temporada.setNumero(1);
      
         //Creo el episodio
         episodio = new Episodio("pilot",1);
@@ -144,12 +144,12 @@ public class Metflix {
         Pelicula armageddon; 
         armageddon = new Pelicula(); 
 
-        titanic.setNombre("Armageddon");
-        titanic.añoLanzamiento = 1998;
-        titanic.duracion = 153; //2 horas 33 min
+        armageddon.setNombre("Armageddon");
+        armageddon.setAñoLanzamiento(1998);
+        armageddon.setAñoLanzamiento(153); //2 horas 33 min
 
         actor = new Actor();
-        actor.nombre = "Bruce Willis";
+        actor.setNombre("Bruce Willis");
 
         //Agrego a la lista de actores del objeto armageddon
         armageddon.actores.add(actor); 
@@ -163,22 +163,22 @@ public class Metflix {
 
         Serie friends = new Serie();
         friends.setNombre("Friends");
-        friends.añoLanzamiento = 1994;
+        friends.setAñoLanzamiento(1994);
         
         actor = new Actor();
-        actor.nombre = "Jennifer Aniston";
+        actor.setNombre("Jennifer Aniston");
 
         friends.actores.add(actor);
 
         actor = new Actor();
-        actor.nombre = "Lisa Kudrow";
+        actor.setNombre("Lisa Kudrow");
 
         friends.actores.add(actor);
         
         //Temporada1  episodio 1
         
         Temporada temporada1 = new Temporada();
-        temporada1.numero = 1;
+        temporada1.setNumero(1);
      
         //Creo el episodio
         episodio = new Episodio("piloto",1);
@@ -199,14 +199,14 @@ public class Metflix {
         forrestGump = new Pelicula(); 
 
         forrestGump.setNombre("Forrest Gump");
-        forrestGump.añoLanzamiento = 1994;
-        forrestGump.duracion = 142; //2 horas 22 min
+        forrestGump.setAñoLanzamiento(1994);
+        forrestGump.setDuracion(142); //2 horas 22 min
 
         Director director = new Director();
-        director.nombre = "Robert zemeckis";
+        director.setNombre("Robert zemeckis");
 
         actor = new Actor(); // instanciamos actor
-        actor.nombre = "Tom Hanks";
+        actor.setNombre("Tom Hanks");
 
         //Agrego a la lista de actores del objeto armageddon
         forrestGump.actores.add(actor); 
@@ -220,22 +220,22 @@ public class Metflix {
 
         Serie sexEducation = new Serie();
         sexEducation.setNombre("Sex Education");
-        sexEducation.añoLanzamiento = 2019;
+        sexEducation.setAñoLanzamiento(2019);
         
         actor = new Actor();
-        actor.nombre = "Gillian Anderson";
+        actor.setNombre("Gillian Anderson");
 
         sexEducation.actores.add(actor);
 
         actor = new Actor();
-        actor.nombre = "Patricia Allison";
+        actor.setNombre("Patricia Allison");
 
         sexEducation.actores.add(actor);
         
         //Temporada2  episodio 5
         
         Temporada temporada2 = new Temporada();
-        temporada2.numero = 2;
+        temporada2.setNumero(2);
      
         //Creo el episodio
         episodio = new Episodio("5" , 5);
@@ -252,7 +252,7 @@ public class Metflix {
 
          
         Temporada temporada3 = new Temporada();
-        temporada3.numero = 3;
+        temporada3.setNumero(3);
      
         //Creo el episodio
         episodio = new Episodio("2",2);
@@ -260,7 +260,7 @@ public class Metflix {
         episodio.setNumero(2);*/
 
         director = new Director();
-        director.nombre = "Gillian Anderson";
+        director.setNombre("Gillian Anderson");
 
         //vinculo temporada con episodio
         temporada3.episodios.add(episodio);
@@ -270,8 +270,15 @@ public class Metflix {
 
 
         this.series.add(sexEducation);
-
       /// SERIE HECHA POR BREN
+        
+
+        //WEBSODIO
+        Websodio ws = new Websodio();
+        ws.setNombre("Nombre wesodio en internet");
+        ws.setNumero(35);
+        ws.setLink("http://miepisodios.com/websodio.avi");
+
 
 
     }
