@@ -1,11 +1,13 @@
 public class Episodio {
-    private int numero;
-    private String nombre;
-    private int duracion; //en minutos
-    private Director director;
-    private String sinopsis;
+ 
 
-    public void reproducir(){
+     private int numero;
+     private String nombre;
+     private int duracion; //en minutos
+     private Director director;
+     private String sinopsis;
+
+     public void reproducir(){
         System.out.println("Reproduciendo episodio " + nombre);
     }
 

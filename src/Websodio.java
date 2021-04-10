@@ -1,4 +1,10 @@
 public class Websodio extends Episodio {
+
+    public Websodio(int numero, String nombre, String link){
+        super(nombre, numero);
+        this.link = link;
+    }
+
     private String link;
 
     //Redefinicion

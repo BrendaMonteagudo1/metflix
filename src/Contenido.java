@@ -9,6 +9,16 @@ public class Contenido {
     private int añoLanzamiento;
     public List<Actor> actores = new ArrayList<>();
 
+    // GET Y SET DE Lista de actores
+
+  /* public Actor getActores(){
+    return this.actores;
+    }
+   public void setActores(Actor actores){
+    this.actores = actores;
+    }*/
+    
+
 
    // GET Y SET DE NOMBRE
 

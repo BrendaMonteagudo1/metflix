@@ -274,10 +274,10 @@ public class Metflix {
         
 
         //WEBSODIO
-        Websodio ws = new Websodio();
-        ws.setNombre("Nombre wesodio en internet");
+        Websodio ws = new Websodio(35, "Nombre wesodio en internet", "http://miepisodios.com/websodio.avi");
+        /*ws.setNombre("Nombre wesodio en internet");
         ws.setNumero(35);
-        ws.setLink("http://miepisodios.com/websodio.avi");
+        ws.setLink("http://miepisodios.com/websodio.avi");*/
 
 
 
